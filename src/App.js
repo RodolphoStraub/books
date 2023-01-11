@@ -46,7 +46,9 @@ function App() {
             bookFantasyData.map(function (item) {
               return (
                 <BookList
+                  key={item.id}
                   {...item}
+                  onClick={() => setCurrentBook(item)}
                 />
               )
             })
@@ -54,12 +56,14 @@ function App() {
         </Livros>
 
         <Livros
-          title="Ficção" >
+          title="Ficção e Suspense" >
           {
             bookFictionData.map(function (item) {
               return (
                 <BookList
+                  key={item.id}
                   {...item}
+                  onClick={() => setCurrentBook(item)}
                 />
               )
             })
@@ -72,7 +76,9 @@ function App() {
             bookContosData.map(function (item) {
               return (
                 <BookList
+                  key={item.id}
                   {...item}
+                  onClick={() => setCurrentBook(item)}
                 />
               )
             })
@@ -85,7 +91,9 @@ function App() {
             bookBiografiaData.map(function (item) {
               return (
                 <BookList
+                  key={item.id}
                   {...item}
+                  onClick={() => setCurrentBook(item)}
                 />
               )
             })
