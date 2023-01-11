@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-image: url(https://s2.glbimg.com/nIqfLY3zjr8JntK_zMS9QxXFaZk=/e.glbimg.com/og/ed/f/original/2020/09/05/alfons-morales-ylswjsy7stw-unsplash.jpg);
+  background-position: top center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: white;
+  background-attachment: fixed;
+}
+
+header {
+  padding-top: 12px;
+  height: 150px;
+}
+
+header div {
+  width: 120px;
+  margin: auto;
+}
+
+h1 {
+  height: 90px;
+  margin-top: 50px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+h2 {
+  height: 50px;
+  text-align: center;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  padding-bottom: 36px;
+}
+
+section {
+  color: white;
+  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+  padding-top: 12px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+section div {
+  background-color: #2A2634;
+  padding: 16px;
+  padding-bottom: 0px;
+  border-radius: 0 0 10px 10px;
+
+}
+
+ul {
+  display: flex;
+  flex-wrap: initial;
+  gap: 16px;
+  overflow: auto;
+}
+
+ul li {
+  width: auto;
+  transition: transform .3s;
+  margin-bottom: 30px;
+  padding: 12px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+}
+
+img {
+  max-width: 180px;
+  max-height: 250px;
+  border-radius: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.modalbg {
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 8;
+}
+
+.modal {}
