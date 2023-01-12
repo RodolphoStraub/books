@@ -85,8 +85,8 @@ ul li:hover {
 }
 
 img {
-  max-width: 180px;
-  max-height: 250px;
+  width: 180px;
+  height: 250px;
   border-radius: 10px;
   align-items: center;
   cursor: pointer;
@@ -105,4 +105,71 @@ img {
   z-index: 8;
 }
 
-.modal {}
+.modal {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  padding-left: 190px;
+  padding-right: 207px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.modalContent {
+  background-color: gray;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  padding: 24px;
+  gap: 32px;
+  margin-left: 10%;
+}
+
+.imageUrl {
+  width: 360px;
+  height: 550px;
+  border-radius: 10px;
+}
+
+.authorImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+
+.pictures {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.authors {
+  display: flex;
+  gap: 32px;
+}
+
+.sinopse {
+  width: 100%;
+}
+
+
+h3, h4, p {
+  text-align: center;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 48px;
+  margin-bottom: 48px;
+}
+
+.text p {
+  font-size: 20px;
+  text-align: justify;
+  text-indent: 25px;
+  padding: 16px;
+}

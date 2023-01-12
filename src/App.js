@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { bookBiografiaData, bookFantasyData, bookListData, bookFictionData, bookContosData } from "./booksData"
+import { bookBiografiaData, bookFantasyData, bookListData, bookFictionData, bookContosData, createBook } from "./booksData"
 import BookList from "./components/BookList"
 import Header from "./components/Header"
 import Livros from "./components/Livros"
@@ -7,19 +7,16 @@ import Modal from "./components/Modal"
 
 function App() {
   const [currentBook, setCurrentBook] = useState()
-  console.log(currentBook)
-
   return (
     <>
       <Header />
       {
         currentBook && <Modal
           imageUrl={currentBook.imageUrl}
-          authorImage={currentBook.authorImage}
           alt={currentBook.alt}
           title={currentBook.title}
           author={currentBook.author}
-          sinopsia={currentBook.sinopsia}
+          sinopse={currentBook.sinopse}
         />
       }
       <main>
