@@ -2,7 +2,9 @@
 function Header() {
   return (
     <header>
-      <h1>Meus livros</h1>
+      <div className="header1">
+        <h1>Meus livros</h1>
+      </div>
     </header>
   );
 }

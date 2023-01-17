@@ -1,6 +1,8 @@
 function Modal(props) {
   return (
     <div className='modalbg'>
+      <button className="close"
+        onClick={props.onClose}> x </button>
       <div className='modal'>
         <div className="modalContent">
           <div className="pictures">
@@ -25,6 +27,7 @@ function Modal(props) {
                   )
                 })
               }
+
             </div>
           </div>
 

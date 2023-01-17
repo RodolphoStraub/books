@@ -1,5 +1,5 @@
-import { useState } from "react"
-import { bookBiografiaData, bookFantasyData, bookListData, bookFictionData, bookContosData, createBook } from "./booksData"
+import { useState, } from "react"
+import { bookBiografiaData, bookFantasyData, bookListData, bookFictionData, bookContosData, } from "./booksData"
 import BookList from "./components/BookList"
 import Header from "./components/Header"
 import Livros from "./components/Livros"
@@ -17,13 +17,13 @@ function App() {
           title={currentBook.title}
           author={currentBook.author}
           sinopse={currentBook.sinopse}
+          onClose={() => setCurrentBook(null)}
         />
       }
+
       <main>
         <Livros
-          title="Terror e Horror"
-        >
-
+          title="Terror e Horror">
           {
             bookListData.map(function (item) {
               return (
@@ -96,7 +96,6 @@ function App() {
             })
           }
         </Livros>
-
 
       </main>
     </>
